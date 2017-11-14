@@ -20,7 +20,7 @@ Jorge G. villanueva
  <preference name='phonegap-version' value='cli-6.5.0' />
 <plugin name="cordova-plugin-camera" spec="2.2.0" />
 <plugin name="https://github.com/phonegap/phonegap-plugin-barcodescanner.git" spec="6.0.1" />
-<plugin name="org.apache.cordova.contacts" source="pgb" spec="0.2.16" />
+<plugin name="cordova-plugin-contacts" spec="~3.0.0" />
 <plugin name="org.apache.cordova.device" source="pgb" spec="0.3.0" />
 <plugin name="org.apache.cordova.device-motion" source="pgb" spec="0.2.11" />
 <plugin name="org.apache.cordova.dialogs" source="pgb" spec="0.3.0" />
