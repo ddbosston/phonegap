@@ -17,7 +17,7 @@ Jorge G. villanueva
 </author>
 
 
- <preference name="phonegap-version" value="3.1.0" />
+ <preference name='phonegap-version' value='cli-6.5.0' />
  <gap:plugin name="org.apache.cordova.device" />
   
 <gap:plugin name="org.apache.cordova.device-motion" />
