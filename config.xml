@@ -22,7 +22,7 @@ Jorge G. villanueva
 <preference name='pgb-builder-version' value='1' />
  
 <plugin name="cordova-plugin-camera" spec="2.2.0" />
-<plugin name="org.apache.cordova.contacts" source="pgb" />
+<plugin name="org.apache.cordova.contacts" />
 <plugin name="org.apache.cordova.device" source="pgb" spec="0.3.0" />
 <plugin name="org.apache.cordova.device-motion" source="pgb" spec="0.2.11" />
 <plugin name="org.apache.cordova.dialogs" source="pgb" spec="0.3.0" />
