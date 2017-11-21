@@ -18,12 +18,10 @@ Jorge G. villanueva
 
 
 
- <preference name='phonegap-version' value='cli-7.0.1' />
+<preference name='phonegap-version' value='cli-7.0.1' />
 <preference name='pgb-builder-version' value='1' />
  
 <plugin name="cordova-plugin-camera" spec="2.2.0" />
-
-<plugin spec="https://github.com/Rohfosho/CordovaCallNumberPlugin.git #854cec0" />
 <plugin name="cordova-plugin-camera" spec="2.2.0" />
 <plugin name="https://github.com/phonegap-build/PushPlugin.git">
 <plugin name="https://github.com/phonegap/phonegap-plugin-barcodescanner.git" spec="6.0.1" />
