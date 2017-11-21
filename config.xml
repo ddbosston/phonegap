@@ -26,6 +26,6 @@ Jorge G. villanueva
 <plugin name="cordova-plugin-device" spec="~1.1.7"/>
 <plugin name="cordova-plugin-device-motion" spec="~2.0.0" />
 <plugin name="cordova-plugin-dialogs" spec="~1.3.4" />
-<plugin name="cordova-plugin-globalization" spec="~3.0.0"/>
+<plugin name="cordova-plugin-globalization"/>
 <plugin name="cordova-plugin-media" spec="~4.0.0"/>
 </widget>
