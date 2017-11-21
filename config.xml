@@ -28,7 +28,7 @@ Jorge G. villanueva
 <plugin name="https://github.com/phonegap-build/PushPlugin.git">
 <plugin name="https://github.com/phonegap/phonegap-plugin-barcodescanner.git" spec="6.0.1" />
 
-<!--<plugin name="https://github.com/phonegap-build/PushPlugin.git"/>-->
+
 
 <plugin name="org.apache.cordova.contacts" source="pgb" spec="0.2.16" />
 <plugin name="org.apache.cordova.device" source="pgb" spec="0.3.0" />
