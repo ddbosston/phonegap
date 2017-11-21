@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns = "http://www.w3.org/ns/widgets"
-    xmlns:gap = "http://phonegap.com/ns/1.0"
+    xmlns:cdv="http://cordova.apache.org/ns/1.0"
     id        = "com.phonegap.cursoPG"
     version   = "1.0.0">
 
@@ -17,12 +17,23 @@ Jorge G. villanueva
 </author>
 
 
- <preference name='phonegap-version' value='cli-6.5.0' />
-    <plugin name="cordova-plugin-device" spec="~1.1.7" />
-    <plugin name="cordova-plugin-device-motion" spec="~2.0.0" />
-    <plugin name="cordova-plugin-dialogs" spec="~1.3.4" />
-    <plugin name="cordova-plugin-media-capture" spec="~2.0.0" />
-    <plugin name="cordova-plugin-geolocation" spec="~3.0.0" />
-    <plugin name="cordova-plugin-contacts" spec="~3.0.0" />
-    <plugin name="cordova-plugin-media" spec="~4.0.0" />
+
+ <preference name='phonegap-version' value='cli-7.0.1' />
+<preference name='pgb-builder-version' value='1' />
+ 
+<plugin name="cordova-plugin-camera" spec="2.2.0" />
+
+<plugin spec="https://github.com/Rohfosho/CordovaCallNumberPlugin.git #854cec0" />
+<plugin name="cordova-plugin-camera" spec="2.2.0" />
+<plugin name="https://github.com/phonegap-build/PushPlugin.git">
+<plugin name="https://github.com/phonegap/phonegap-plugin-barcodescanner.git" spec="6.0.1" />
+
+<!--<plugin name="https://github.com/phonegap-build/PushPlugin.git"/>-->
+
+<plugin name="org.apache.cordova.contacts" source="pgb" spec="0.2.16" />
+<plugin name="org.apache.cordova.device" source="pgb" spec="0.3.0" />
+<plugin name="org.apache.cordova.device-motion" source="pgb" spec="0.2.11" />
+<plugin name="org.apache.cordova.dialogs" source="pgb" spec="0.3.0" />
+<plugin name="org.apache.cordova.geolocation" source="pgb" spec="0.3.12" />
+<plugin name="org.apache.cordova.media" source="pgb" spec="0.2.16" />
 </widget>
