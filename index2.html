@@ -84,7 +84,7 @@ NOTE:
             // handle GCM notifications for Android
             function onNotification(e) {
                 $("#app-status-ul").append('<li>EVENT -> RECEIVED:' + e.event + '</li>');
-                
+                $("#mensajes").append(" | "+e.event+" | ");
                 switch( e.event )
                 {
                     case 'registered':
