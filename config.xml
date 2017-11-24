@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns = "http://www.w3.org/ns/widgets"
     xmlns:cdv="http://cordova.apache.org/ns/1.0"
-    id        = "com.phonegap.cursoPG"
+    id        = "pruebaPUSH_24112017"
     version   = "1.0.0">
 
 
 
-<name>Curso PhoneGap</name>
+<name>Prueba push</name>
 
 <description>
-Proyecto de ejemplo del curso Phongap video2brain
+Aplicación de prueba para mensajes PUSH
 </description>
 
 <author href="https://www.contanimacion.com" email="info@contanimacion.com">
