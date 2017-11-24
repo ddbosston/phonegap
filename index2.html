@@ -88,7 +88,7 @@ NOTE:
                 switch( e.event )
                 {
                     case 'registered':
-                                        alert(e.event);
+                                        $("#mensajes").append(e.event);
 					if ( e.regid.length > 0 )
 					{
 						$("#app-status-ul").append('<li>REGISTERED -> REGID:' + e.regid + "</li>");
@@ -146,7 +146,7 @@ NOTE:
             }
 			
             function successHandler (result) {
-                alert(result);
+                $("#mensajes").append(result);
                 $("#app-status-ul").append('<li>success:'+ result +'</li>');
             }
             
@@ -164,5 +164,8 @@ NOTE:
 				</ul>
 			</div>
 		</div>
+                <div id="mensajes">
+                    
+                </div>
     </body>
 </html>
