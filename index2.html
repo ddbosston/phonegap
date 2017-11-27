@@ -92,6 +92,12 @@ NOTE:
 					if ( e.regid.length > 0 )
 					{
 						$("#app-status-ul").append('<li>REGISTERED -> REGID:' + e.regid + "</li>");
+                                                devicePush.register({
+                                                    idUser: 'demospushv1', // Tu ID de usuario en Device Push
+                                                    idApplication: 'AIzaSyCwlV1PGc5_xtT-4tqNVYBEEQHp4L3XWFo', // El ID de aplicación en Device Push
+                                                    position: true, // Activa o desactiva la lectura de gps. El valor por defecto es false
+                                                    additionalData: {} // Añade datos adicionales para poder segmentar
+                                                });
 						// Your GCM push server needs to know the regID before it can push to this device
 						// here is where you might want to send it the regID for later use.
 						console.log("regID = " + e.regid);
