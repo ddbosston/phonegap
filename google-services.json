@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "746096892517",
-    "firebase_url": "https://demospushv1.firebaseio.com",
-    "project_id": "demospushv1",
-    "storage_bucket": "demospushv1.appspot.com"
+    "project_number": "108192866485",
+    "firebase_url": "https://pruebapush-fa874.firebaseio.com",
+    "project_id": "pruebapush-fa874",
+    "storage_bucket": "pruebapush-fa874.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:746096892517:android:29fa4c1412f9afd3",
+        "mobilesdk_app_id": "1:108192866485:android:d26f88c480874fbd",
         "android_client_info": {
-          "package_name": "com.Prueba_push.android"
+          "package_name": "com.pruebapush.android"
         }
       },
       "oauth_client": [
         {
-          "client_id": "746096892517-edv9fa8sis0rb815skoa91jl2a0r5qam.apps.googleusercontent.com",
+          "client_id": "108192866485-g6ohe8et24596r4nb08epujulecm0mpv.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBHkwjLBUaW_4aWbnyFkWpxpSO2TyfvGVU"
+          "current_key": "AIzaSyCS4uGb3seKLzhP2gnk02G1wW-JD79lfYk"
         }
       ],
       "services": {
