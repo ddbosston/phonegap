@@ -62,10 +62,12 @@ NOTE:
                         "windows": {}
                     });
                     console.log('after init');
+                    alert("despues del init");
 
                     push.on('registration', function(data) {
                         $("#app-status-ul").append('<li>push-notification: ' + data.registrationId + '</li>');
                         console.log('registration event: ' + data.registrationId);
+                        alert( data.registrationId);
 
                         /*jQuery.ajax({
                             url: 'URL-PARA-REGISTRO-DISPOSITIVO/archivo.php',
