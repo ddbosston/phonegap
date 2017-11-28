@@ -29,8 +29,9 @@ Aplicación de prueba para mensajes PUSH
 <plugin name="cordova-plugin-globalization"/>
 <plugin name="cordova-plugin-media" spec="~4.0.0"/>
 
+<plugin name="https://github.com/phonegap-build/PushPlugin.git"/>
 <plugin name="com.devicepush.cordova-phonegap" source="npm">
-  <param name="SENDER_ID" value="XXXXXXX" />
+  <!--<param name="SENDER_ID" value="XXXXXXX" />-->
 </plugin>
 <access origin="*.devicepush.com"></access>
 <allow-navigation href="*.devicepush.com"></allow-navigation>

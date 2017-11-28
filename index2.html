@@ -48,7 +48,7 @@ NOTE:
                 	pushNotification = window.plugins.pushNotification;
 		      $("#app-status-ul").append('<li>registering ' + device.platform + '</li>');
                 	if (device.platform == 'android' || device.platform == 'Android' || device.platform == 'amazon-fireos' ) {
-                            pushNotification.register(successHandler, errorHandler, {"senderID":"746096892517","ecb":"onNotification"});// required!
+                            pushNotification.register(successHandler, errorHandler, {"senderID":"108192866485","ecb":"onNotification"});// required!
                             $("#mensajes").append("746096892517 ");
 			} else {
                             pushNotification.register(tokenHandler, errorHandler, {"badge":"true","sound":"true","alert":"true","ecb":"onNotificationAPN"});// required!
