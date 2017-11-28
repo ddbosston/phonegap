@@ -34,6 +34,6 @@ Aplicación de prueba para mensajes PUSH
   <variable name="SENDER_ID" value="108192866485" />
 </plugin>
 
-
+<gap:plugin name="cordova-plugin-badge" version="0.7.4" source="npm" />
 
 </widget>

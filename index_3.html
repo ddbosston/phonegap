@@ -49,6 +49,7 @@ NOTE:
                 setupPush: function() {
                     alert("setupPush");
                     console.log('calling push init');
+                    
                     var push = PushNotification.init({
                         "android": {
                             "senderID": "108192866485"
@@ -67,7 +68,7 @@ NOTE:
                     push.on('registration', function(data) {
                         $("#app-status-ul").append('<li>push-notification: ' + data.registrationId + '</li>');
                         console.log('registration event: ' + data.registrationId);
-                        alert( data.registrationId);
+                        alert(data.registrationId);
 
                         /*jQuery.ajax({
                             url: 'URL-PARA-REGISTRO-DISPOSITIVO/archivo.php',
@@ -105,15 +106,17 @@ NOTE:
 
                     push.on('notification', function(data) {
                         console.log('notification event');
+                         alert("push error = " + data.message);
+                         $("#app-status-ul").append('<li>push-notification: ' + data.message + '</li>');
 
-                cordova.plugins.notification.badge.set(0);
+                        cordova.plugins.notification.badge.set(0);
                         navigator.notification.alert(
                             data.message,         // message
                             null,                 // callback
                             data.title,           // title
                             'Ok'                  // buttonName
                         );
-                   });
+                    });
                 }
             };
 
