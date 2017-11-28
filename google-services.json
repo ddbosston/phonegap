@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "108192866485",
-    "firebase_url": "https://pruebapush-fa874.firebaseio.com",
-    "project_id": "pruebapush-fa874",
-    "storage_bucket": "pruebapush-fa874.appspot.com"
+    "project_number": "777200381214",
+    "firebase_url": "https://pruebapush-fabb8.firebaseio.com",
+    "project_id": "pruebapush-fabb8",
+    "storage_bucket": "pruebapush-fabb8.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:108192866485:android:29fa4c1412f9afd3",
+        "mobilesdk_app_id": "1:777200381214:android:feed58475cc41a8a",
         "android_client_info": {
-          "package_name": "com.Prueba_push.android"
+          "package_name": "com.Pruebapush.android"
         }
       },
       "oauth_client": [
         {
-          "client_id": "108192866485-g6ohe8et24596r4nb08epujulecm0mpv.apps.googleusercontent.com",
+          "client_id": "777200381214-gjt2viiobf0fu5ql2raudof9c9e8508h.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCS4uGb3seKLzhP2gnk02G1wW-JD79lfYk"
+          "current_key": "AIzaSyAckz_rPRd8lZDzo0RxSy_AYGhrwhw_OmA"
         }
       ],
       "services": {
