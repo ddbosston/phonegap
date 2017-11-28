@@ -24,6 +24,7 @@ NOTE:
             var app = {
                 initialize: function() {
                     this.bindEvents();
+                    $("#app-status-ul").append('<li>anicializa</li>');
                 },
                 bindEvents: function() {
                     document.addEventListener('deviceready', this.onDeviceReady, false);
