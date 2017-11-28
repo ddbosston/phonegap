@@ -33,19 +33,22 @@ NOTE:
                     ;
                 },
                 onDeviceReady: function() {
-                    alert("onDeviceReady")
+                    alert("onDeviceReady");
                     app.receivedEvent('deviceready');
                     devicePush.register({
-                        idUser: '746096892517', // Tu ID de usuario en Device Push
-                        idApplication: 'AIzaSyCwlV1PGc5_xtT-4tqNVYBEEQHp4L3XWFo', // El ID de aplicación en Device Push
+                        idUser: 'pruebapush-fa874', // Tu ID de usuario en Device Push
+                        idApplication: 'AIzaSyBly1Kmd5WUA6dfhUVISbs3264MuD6qdgM ', // El ID de aplicación en Device Push
                         position: true, // Activa o desactiva la lectura de gps. El valor por defecto es false
                         additionalData: {} // Añade datos adicionales para poder segmentar
                     });
+                    alert("onDeviceReady")
                 },
-                receivedEvent: function(id) {}
+                receivedEvent: function(id) {
+                    document.addEventListener("deviceRegistered", successDeviceRegistered, false);
+                }
             };
             
-            document.addEventListener("deviceRegistered", successDeviceRegistered, false);
+            
             function successDeviceRegistered(evt){
                 alert("successDeviceRegistered");
                 console.log("Device Id" + evt.devicePushId);
