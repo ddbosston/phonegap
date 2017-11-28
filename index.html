@@ -1,78 +1,35 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html> 
 <html>
-    <head>
-        <title>com.PhoneGap.c2dm</title>
-    </head>
-    <body>
+<head>
+<meta charset="utf-8">
+<title>Aplic. Web de jQuery Mobile</title>
 
-<!--/*
-NOTE:
-    This demo uses these plugins:
-        Cordova Device Plugin: http://plugins.cordova.io/#/package/org.apache.cordova.device
-        Cordova Media Plugin: http://plugins.cordova.io/#/package/org.apache.cordova.media
+<link href="jquery-mobile/jquery.mobile.structure-1.3.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="jquery-mobile/cursoPG.min.css" rel="stylesheet" type="text/css">
 
-    To add them via the CLI:
-        $ cordova plugin add org.apache.cordova.device
-        $ cordova plugin add org.apache.cordova.media
-*/ -->      
-        <!--<script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"></script>-->
-        <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
-        <script type="text/javascript" charset="utf-8" src="jquery_1.5.2.min.js"></script>
-        <script type="text/javascript" src="PushNotification.js"></script>
-        
-        <script type="text/javascript">
-            var app = {
-                initialize: function() {
-                    this.bindEvents();
-                },
-                bindEvents: function() {
-                    document.addEventListener('deviceready', this.onDeviceReady, false);
-                },
-                onDeviceReady: function() {
-                    app.receivedEvent('deviceready');
-                    devicePush.register({
-                        idUser: 'USER_ID', // Tu ID de usuario en Device Push
-                        idApplication: 'APPLICATION_ID', // El ID de aplicación en Device Push
-                        position: true, // Activa o desactiva la lectura de gps. El valor por defecto es false
-                        additionalData: {} // Añade datos adicionales para poder segmentar
-                    });
-                },
-                receivedEvent: function(id) {}
-            };
-            
-            document.addEventListener("deviceRegistered", successDeviceRegistered, false);
-            function successDeviceRegistered(evt){
-                console.log("Device Id" + evt.devicePushId);
-                var id = evt.devicePushId;
-                console.log("Device Token" + evt.devicePushToken);
-                var tokenDevice = evt.devicePushToken;
-                $("#app-status-ul").append('<li>Token: '+tokenDevice+'</li>');
-            }
-            
-            document.addEventListener('notificationReceived', successNotificationReceived, false);
-            function successNotificationReceived(evt){
-                // evt.data.message,
-                // evt.data.title,
-                // evt.data.count,
-                // evt.data.sound,
-                // evt.data.additionalData
-                console.log(evt.data.message) // Éste es el texto enviado.
-            
-            
-            document.addEventListener("deviceError", successDeviceError, false);
-            function successDeviceError(){
-                //TODO
-            }
-                     </script>
-		<div id="home">
-			<div id="app-status-div">
-				<ul id="app-status-ul">
-					<li>Cordova PushNotification Plugin Demo</li>
-				</ul>
-			</div>
-		</div>
-                <div id="mensajes">
-                    
-                </div>
-    </body>
+<script src="jquery-mobile/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.3.0.min.js" type="text/javascript"></script>
+
+
+<link href="CSS/estilos.css" rel="stylesheet" type="text/css">
+</head> 
+<body onload="onBodyLoad()"> 
+
+<div data-role="page" id="page" data-theme="a">
+	<div data-role="header">
+		<h1>Curso Phonegap</h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview">
+                    <li><a href="jquerymobile.html" rel="external" >JQuery Mobile</a></li>
+                    <li><a href="phonegap.html" rel="external" >Phonegap</a></li>
+                    <li><a href="index_3.html" rel="external" >push</a></li>
+		</ul>		
+	</div>
+	<div data-role="footer">
+		<h4>video2brain</h4>
+	</div>
+</div>
+
+</body>
 </html>

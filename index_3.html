@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>com.PhoneGap.c2dm</title>
+    </head>
+    <body>
+
+<!--/*
+NOTE:
+    This demo uses these plugins:
+        Cordova Device Plugin: http://plugins.cordova.io/#/package/org.apache.cordova.device
+        Cordova Media Plugin: http://plugins.cordova.io/#/package/org.apache.cordova.media
+
+    To add them via the CLI:
+        $ cordova plugin add org.apache.cordova.device
+        $ cordova plugin add org.apache.cordova.media
+*/ -->      
+        <!--<script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"></script>-->
+        <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+        <script type="text/javascript" charset="utf-8" src="jquery_1.5.2.min.js"></script>
+        <script type="text/javascript" src="PushNotification.js"></script>
+        
+        <script type="text/javascript">
+            var app = {
+                initialize: function() {
+                    this.bindEvents();
+                },
+                bindEvents: function() {
+                    document.addEventListener('deviceready', this.onDeviceReady, false);
+                },
+                onDeviceReady: function() {
+                    app.receivedEvent('deviceready');
+                    devicePush.register({
+                        idUser: 'USER_ID', // Tu ID de usuario en Device Push
+                        idApplication: 'APPLICATION_ID', // El ID de aplicación en Device Push
+                        position: true, // Activa o desactiva la lectura de gps. El valor por defecto es false
+                        additionalData: {} // Añade datos adicionales para poder segmentar
+                    });
+                },
+                receivedEvent: function(id) {}
+            };
+            
+            document.addEventListener("deviceRegistered", successDeviceRegistered, false);
+            function successDeviceRegistered(evt){
+                console.log("Device Id" + evt.devicePushId);
+                var id = evt.devicePushId;
+                console.log("Device Token" + evt.devicePushToken);
+                var tokenDevice = evt.devicePushToken;
+                $("#app-status-ul").append('<li>Token: '+tokenDevice+'</li>');
+            }
+            
+            document.addEventListener('notificationReceived', successNotificationReceived, false);
+            function successNotificationReceived(evt){
+                // evt.data.message,
+                // evt.data.title,
+                // evt.data.count,
+                // evt.data.sound,
+                // evt.data.additionalData
+                console.log(evt.data.message) // Éste es el texto enviado.
+            
+            
+            document.addEventListener("deviceError", successDeviceError, false);
+            function successDeviceError(){
+                //TODO
+            }
+                     </script>
+		<div id="home">
+			<div id="app-status-div">
+				<ul id="app-status-ul">
+					<li>Cordova PushNotification Plugin Demo</li>
+				</ul>
+			</div>
+		</div>
+                <div id="mensajes">
+                    
+                </div>
+    </body>
+</html>
