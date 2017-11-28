@@ -8,9 +8,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:108192866485:android:d26f88c480874fbd",
+        "mobilesdk_app_id": "1:108192866485:android:29fa4c1412f9afd3",
         "android_client_info": {
-          "package_name": "com.pruebapush.android"
+          "package_name": "com.Prueba_push.android"
         }
       },
       "oauth_client": [
