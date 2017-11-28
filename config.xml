@@ -30,7 +30,7 @@ Aplicación de prueba para mensajes PUSH
 <plugin name="cordova-plugin-media" spec="~4.0.0"/>
 
 <plugin name="https://github.com/phonegap-build/PushPlugin.git"/>
-<plugin name="phonegap-plugin-push" source="npm" spec="2.0.0" >>
+<plugin name="phonegap-plugin-push" source="npm" spec="2.0.0">
   <variable name="108192866485" value="pruebapush-fa874" />
 </plugin>
 <plugin name="cordova-plugin-device" source="npm" spec="~1.1.1" />
