@@ -25,6 +25,7 @@ NOTE:
                 initialize: function() {
                     this.bindEvents();
                     $("#app-status-ul").append('<li>anicializa</li>');
+                    alert("algo");
                 },
                 bindEvents: function() {
                     document.addEventListener('deviceready', this.onDeviceReady, false);
@@ -59,7 +60,7 @@ NOTE:
                 // evt.data.additionalData
                 console.log(evt.data.message) // Éste es el texto enviado.
             
-            
+            }
             document.addEventListener("deviceError", successDeviceError, false);
             function successDeviceError(){
                 $("#app-status-ul").append('<li> Algo</li>');
