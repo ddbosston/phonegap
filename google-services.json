@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "777200381214",
-    "firebase_url": "https://pruebapush-fabb8.firebaseio.com",
-    "project_id": "pruebapush-fabb8",
-    "storage_bucket": "pruebapush-fabb8.appspot.com"
+    "project_number": "470432523031",
+    "firebase_url": "https://pruebapush-e2f3a.firebaseio.com",
+    "project_id": "pruebapush-e2f3a",
+    "storage_bucket": "pruebapush-e2f3a.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:777200381214:android:feed58475cc41a8a",
+        "mobilesdk_app_id": "1:470432523031:android:feed58475cc41a8a",
         "android_client_info": {
           "package_name": "com.Pruebapush.android"
         }
       },
       "oauth_client": [
         {
-          "client_id": "777200381214-gjt2viiobf0fu5ql2raudof9c9e8508h.apps.googleusercontent.com",
+          "client_id": "470432523031-io7n2esqv5rq82pkq8csv9ffsh28qs53.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAckz_rPRd8lZDzo0RxSy_AYGhrwhw_OmA"
+          "current_key": "AIzaSyATnuJjqyQBQDwDayn5Hfb5BQU74776cUw"
         }
       ],
       "services": {
