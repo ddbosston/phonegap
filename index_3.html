@@ -106,8 +106,8 @@ NOTE:
 
                     push.on('notification', function(data) {
                         console.log('notification event');
-                         alert("push error = " + data.message);
-                         $("#app-status-ul").append('<li>push-notification: ' + data.message + '</li>');
+                         alert("push data = " + data.message);
+                         $("#app-status-ul").append('<li>push-notification: ' + data.message + '-'+ data.title +' -' +'</li>');
 
                         cordova.plugins.notification.badge.set(0);
                         navigator.notification.alert(
