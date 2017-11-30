@@ -81,10 +81,10 @@ NOTE:
                             contentType: 'application/JSON, charset=utf-8',
                             jsonpCallback: retorno,
                             success:function(response){
-                              if (response.msg=='primera'){
+                              /*if (response.msg=='primera'){
                                 alert('Su teléfono ha quedado registrado');
 
-                              }
+                              }*/
                               alert(response);
                             },
                             error:function(xhr, status){
@@ -93,6 +93,7 @@ NOTE:
 
                             }
                         });
+                        alert('Prueba:   '+data.registrationId);
 
                         var parentElement = document.getElementById('registration');
                         var listeningElement = parentElement.querySelector('.waiting');
