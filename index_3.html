@@ -75,11 +75,11 @@ NOTE:
                             type:'POST',
                             /*data:'datos='+data.registrationId+'||'+plataforma,*/
                             /*dataType:'json',*/
-                            /*crossDomain: crossDomain,*/
+                            crossDomain: crossDomain,
                             data: $(this).serialize(),
                             dataType: 'TEXT',
                             contentType: 'application/JSON, charset=utf-8',
-                            /*jsonpCallback: retorno,*/
+                            jsonpCallback: retorno,
                             success:function(response){
                               /*if (response.msg=='primera'){
                                 alert('Su teléfono ha quedado registrado');
@@ -89,7 +89,7 @@ NOTE:
                             },
                             error:function(xhr, status){
                               alert(status, 'ERROR');
-                              alert("entro al error del ajax")
+                              alert(xhr+' - '+xhr)
 
                             }
                         });
