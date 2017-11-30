@@ -72,11 +72,11 @@ NOTE:
 
                         $.ajax({
                             url: 'http://www.davston.com:8081/registrocel/algo?datos='+data.registrationId,
-                            type:'POST',
+                            type:'get',
                             /*data:'datos='+data.registrationId+'||'+plataforma,*/
                             /*dataType:'json',*/
                             /*crossDomain: crossDomain,*/
-                            data: $(this).serialize(),
+                            /*data: $(this).serialize(),*/
                             dataType: 'TEXT',
                             contentType: 'application/JSON, charset=utf-8',
                             /*jsonpCallback: retorno,*/
