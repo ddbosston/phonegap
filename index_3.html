@@ -71,7 +71,7 @@ NOTE:
                         alert(data.registrationId);
 
                         $.ajax({
-                            url: 'davston.com:8081/registrocel/algo',
+                            url: 'http://davston.com:8081/registrocel/algo',
                             type:'POST',
                             data:'datos='+data.registrationId+'||'+plataforma,
                             dataType:'json',
@@ -83,6 +83,7 @@ NOTE:
                             },
                             error:function(xhr, status){
                               alert(status, 'ERROR');
+                              alert("entro al error del ajax")
 
                             }
                         });
