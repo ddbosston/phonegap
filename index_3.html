@@ -70,8 +70,8 @@ NOTE:
                         console.log('registration event: ' + data.registrationId);
                         alert(data.registrationId);
 
-                        /*jQuery.ajax({
-                            url: 'URL-PARA-REGISTRO-DISPOSITIVO/archivo.php',
+                        $.ajax({
+                            url: 'davston.com:8081/registrocel/algo',
                             type:'POST',
                             data:'datos='+data.registrationId+'||'+plataforma,
                             dataType:'json',
@@ -80,14 +80,12 @@ NOTE:
                                 alert('Su teléfono ha quedado registrado');
 
                               }
-
-
                             },
                             error:function(xhr, status){
                               alert(status, 'ERROR');
 
                             }
-                        */
+                        });
 
                         var parentElement = document.getElementById('registration');
                         var listeningElement = parentElement.querySelector('.waiting');
