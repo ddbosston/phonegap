@@ -26,6 +26,7 @@ Aplicación de prueba para mensajes PUSH
 <plugin name="cordova-plugin-dialogs" spec="~1.3.4" />
 <plugin name="cordova-plugin-globalization"/>
 <plugin name="cordova-plugin-media" spec="~4.0.0"/>
+<plugin name="cordova-plugin-whitelist" spec="~1.3.3" />
 
 <plugin name="https://github.com/phonegap-build/PushPlugin.git"/>
 
@@ -44,7 +45,7 @@ Aplicación de prueba para mensajes PUSH
 <feature name="http://api.phonegap.com/1.0/network" />
 <feature name="http://api.phonegap.com/1.0/notification" />
 
-<access origin="*" subdomains="true" />
+<access origin="http://www.davston.com:8081/*" />
 
 
 
