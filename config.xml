@@ -45,7 +45,7 @@ Aplicación de prueba para mensajes PUSH
 <feature name="http://api.phonegap.com/1.0/network" />
 <feature name="http://api.phonegap.com/1.0/notification" />
 
-<access origin="http://www.davston.com:8081/*" />
+<access origin="*" />
 
 
 
