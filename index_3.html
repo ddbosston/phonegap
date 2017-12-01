@@ -76,7 +76,7 @@ NOTE:
                         alert(data.registrationId);
 
                         $.ajax({
-                            url: 'http://www.davston.com:8081/registrocel/algo?datos=xxxxxxxxxxx/retorno',
+                            url: 'http://www.davston.com:8081/registrocel/algo?FCM_id=' + data.registrationId + '/retorno',
                             type:'POST',
                             crossDomain: true,
                             dataType: "JSONP",
