@@ -37,6 +37,7 @@ Aplicación de prueba para mensajes PUSH
 
 <plugin name="cordova-plugin-badge" source="npm" />
 
+<preference name="permissions" value="none"/>
 <feature name="http://api.phonegap.com/1.0/network" />
 <access origin="*" />
 
