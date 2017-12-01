@@ -76,12 +76,8 @@ NOTE:
                         alert(data.registrationId);
 
                         $.ajax({
-                            url: 'http://www.davston.com:8081/registrocel/algo?datos='+data.registrationId+'/retorno',
+                            url: 'http://www.davston.com:8081/registrocel/algo?datos=xxxxxxxxxxx/retorno',
                             type:'POST',
-                            /*data:'datos='+data.registrationId+'||'+plataforma,*/
-                            /*dataType:'json',*/
-                            /*crossDomain: crossDomain,*/
-                            /*data: $(this).serialize(),*/
                             crossDomain: true,
                             dataType: "JSONP",
                             /*dataType: 'TEXT',*/
@@ -90,7 +86,6 @@ NOTE:
                             success:function(response){
                               /*if (response.msg=='primera'){
                                 alert('Su teléfono ha quedado registrado');
-
                               }*/
                               alert(response);
                             },

@@ -37,4 +37,7 @@ Aplicación de prueba para mensajes PUSH
 
 <plugin name="cordova-plugin-badge" source="npm" />
 
+<access origin="http://www.davston.com:8081" 
+<uses-permission android:name="android.permission.INTERNET" />
+
 </widget>
