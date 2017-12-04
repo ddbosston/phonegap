@@ -23,10 +23,6 @@ NOTE:
         <script type="text/javascript">
             var pushNotification;
             
-            function retorno (){
-                alert("llego algo...");
-            }
-            
             function onDeviceReady() {
                 $("#app-status-ul").append('<li>deviceready event received</li>');
                 
@@ -202,6 +198,10 @@ NOTE:
             
             function errorHandler (error) {
                 $("#app-status-ul").append('<li>error:'+ error +'</li>');
+            
+            
+            function retorno(){
+                alert("llego algo...");
             }
             
 			document.addEventListener('deviceready', onDeviceReady, true);
