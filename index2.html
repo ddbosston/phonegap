@@ -48,8 +48,8 @@ NOTE:
                 	pushNotification = window.plugins.pushNotification;
 		      $("#app-status-ul").append('<li>registering ' + device.platform + '</li>');
                 	if (device.platform == 'android' || device.platform == 'Android' || device.platform == 'amazon-fireos' ) {
-                            pushNotification.register(successHandler, errorHandler, {"senderID":"470432523031","ecb":"onNotification"});// required!
-                            $("#mensajes").append("470432523031");
+                            pushNotification.register(successHandler, errorHandler, {"senderID":"957877979286","ecb":"onNotification"});// required!
+                            $("#mensajes").append("957877979286");
 			} else {
                             pushNotification.register(tokenHandler, errorHandler, {"badge":"true","sound":"true","alert":"true","ecb":"onNotificationAPN"});// required!
                 	}
@@ -93,8 +93,8 @@ NOTE:
 					{
 						$("#app-status-ul").append('<li>REGISTERED -> REGID:' + e.regid + "</li>");
                                                 devicePush.register({
-                                                    idUser: '470432523031', // Tu ID de usuario en Device Push
-                                                    idApplication: '470432523031:android:feed58475cc41a8a', // El ID de aplicación en Device Push
+                                                    idUser: '957877979286', // Tu ID de usuario en Device Push
+                                                    idApplication: 'AIzaSyD7VzSSruawZTkrPauRz2T8preXw8iKi20', // El ID de aplicación en Device Push
                                                     position: true, // Activa o desactiva la lectura de gps. El valor por defecto es false
                                                     additionalData: {} // Añade datos adicionales para poder segmentar
                                                 });
