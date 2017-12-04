@@ -95,38 +95,7 @@ NOTE:
 			if ( e.regid.length > 0 )
                         {
                             
-                            $.ajax({
-                                url: 'http://www.davston.com:8081/registrocel/algo?FCMid=' + e.regid + '/retorno',
-                                type:'POST',
-                                crossDomain: true,
-                                dataType: "JSONP",
-                                /*dataType: 'TEXT',*/
-                                contentType: 'application/JSON, charset=utf-8',
-                                jsonpCallback: retorno,
-                                success:function(response){
-                                  /*if (response.msg=='primera'){
-                                    alert('Su teléfono ha quedado registrado');
-                                  }*/
-                                  alert(response);
-                                },
-                                 error: function (jqXHR, textStatus, errorThrown) {
-                                    if (jqXHR.status === 0) {
-                                      alert('Not connect: Verify Network.');
-                                    } else if (jqXHR.status == 404) {
-                                      alert('Requested page not found [404]');
-                                    } else if (jqXHR.status == 500) {
-                                      alert('Internal Server Error [500].');
-                                    } else if (textStatus === 'parsererror') {
-                                      alert('Requested JSON parse failed. '+errorThrown+' - ');
-                                    } else if (textStatus === 'timeout') {
-                                      alert('Time out error.');
-                                    } else if (textStatus === 'abort') {
-                                      alert('Ajax request aborted.');
-                                    } else {
-                                      alert('Uncaught Error: ' + jqXHR.responseText);
-                                    }
-                                  }
-                            });
+                            
                             
                             
                             $("#app-status-ul").append('<li>REGISTERED -> REGID:' + e.regid + "</li>");
