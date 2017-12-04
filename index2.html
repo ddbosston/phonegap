@@ -16,7 +16,7 @@ NOTE:
         $ cordova plugin add org.apache.cordova.media
 */ -->      
         <!--<script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"></script>-->
-        <!--<script type="text/javascript" charset="utf-8" src="phonegap.js"></script>-->
+        <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
         <script type="text/javascript" charset="utf-8" src="jquery_1.5.2.min.js"></script>
         <script type="text/javascript" src="PushNotification.js"></script>
         
@@ -50,9 +50,6 @@ NOTE:
                 	if (device.platform == 'android' || device.platform == 'Android' || device.platform == 'amazon-fireos' ) {
                             pushNotification.register(successHandler, errorHandler, {"senderID":"957877979286","ecb":"onNotification"});// required!
                             $("#mensajes").append("957877979286");
-                            
-                            
-                            
 			} else {
                             pushNotification.register(tokenHandler, errorHandler, {"badge":"true","sound":"true","alert":"true","ecb":"onNotificationAPN"});// required!
                 	}
@@ -91,28 +88,20 @@ NOTE:
                 switch( e.event )
                 {
                     case 'registered':
-                        $("#mensajes").append(e.event);
-			if ( e.regid.length > 0 )
-                        {
-                            
-                            
-                            
-                            
-                            $("#app-status-ul").append('<li>REGISTERED -> REGID:' + e.regid + "</li>");
-                            // Your GCM push server needs to know the regID before it can push to this device
-                            // here is where you might want to send it the regID for later use.
-                            
-                            
-                                devicePush.register({
-                                idUser: '957877979286', // Tu ID de usuario en Device Push
-                                idApplication: 'AIzaSyD7VzSSruawZTkrPauRz2T8preXw8iKi20', // El ID de aplicación en Device Push
-                                position: true, // Activa o desactiva la lectura de gps. El valor por defecto es false
-                                additionalData: {} // Añade datos adicionales para poder segmentar
-                                });
-
-                            
-                            console.log("regID = " + e.regid);    
-			}
+                                        $("#mensajes").append(e.event);
+					if ( e.regid.length > 0 )
+					{
+						$("#app-status-ul").append('<li>REGISTERED -> REGID:' + e.regid + "</li>");
+                                                devicePush.register({
+                                                    idUser: '957877979286', // Tu ID de usuario en Device Push
+                                                    idApplication: 'AIzaSyD7VzSSruawZTkrPauRz2T8preXw8iKi20', // El ID de aplicación en Device Push
+                                                    position: true, // Activa o desactiva la lectura de gps. El valor por defecto es false
+                                                    additionalData: {} // Añade datos adicionales para poder segmentar
+                                                });
+						// Your GCM push server needs to know the regID before it can push to this device
+						// here is where you might want to send it the regID for later use.
+						console.log("regID = " + e.regid);
+					}
                     break;
                     
                     case 'message':
@@ -172,12 +161,7 @@ NOTE:
                 $("#app-status-ul").append('<li>error:'+ error +'</li>');
             }
             
-            function retorno(){
-                alert("llego algo...");
-            }
-            
-           
-            document.addEventListener('deviceready', onDeviceReady, true);
+			document.addEventListener('deviceready', onDeviceReady, true);
 
          </script>
 		<div id="home">
