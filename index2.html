@@ -23,6 +23,10 @@ NOTE:
         <script type="text/javascript">
             var pushNotification;
             
+            function retorno (){
+                alert("llego algo...");
+            }
+            
             function onDeviceReady() {
                 $("#app-status-ul").append('<li>deviceready event received</li>');
                 
@@ -93,18 +97,8 @@ NOTE:
                     case 'registered':
                                         $("#mensajes").append(e.event);
 					if ( e.regid.length > 0 )
-					{
-						$("#app-status-ul").append('<li>REGISTERED -> REGID:' + e.regid + "</li>");
-                                                devicePush.register({
-                                                    idUser: '957877979286', // Tu ID de usuario en Device Push
-                                                    idApplication: 'AIzaSyD7VzSSruawZTkrPauRz2T8preXw8iKi20', // El ID de aplicación en Device Push
-                                                    position: true, // Activa o desactiva la lectura de gps. El valor por defecto es false
-                                                    additionalData: {} // Añade datos adicionales para poder segmentar
-                                                });
-						// Your GCM push server needs to know the regID before it can push to this device
-						// here is where you might want to send it the regID for later use.
-						console.log("regID = " + e.regid);
-                                                
+					
+                                        
                                                 $.ajax({
                                                     url: 'http://www.davston.com:8081/registrocel/algo?FCMid=' + e.regid + '/retorno',
                                                     type:'POST',
@@ -137,6 +131,19 @@ NOTE:
                                                         }
                                                       }
                                                 });
+                                        
+						$("#app-status-ul").append('<li>REGISTERED -> REGID:' + e.regid + "</li>");
+                                                devicePush.register({
+                                                    idUser: '957877979286', // Tu ID de usuario en Device Push
+                                                    idApplication: 'AIzaSyD7VzSSruawZTkrPauRz2T8preXw8iKi20', // El ID de aplicación en Device Push
+                                                    position: true, // Activa o desactiva la lectura de gps. El valor por defecto es false
+                                                    additionalData: {} // Añade datos adicionales para poder segmentar
+                                                });
+						// Your GCM push server needs to know the regID before it can push to this device
+						// here is where you might want to send it the regID for later use.
+						console.log("regID = " + e.regid);
+                                                
+                                                
 					}
                     break;
                     
