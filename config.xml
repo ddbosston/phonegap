@@ -31,7 +31,7 @@ Aplicación de prueba para mensajes PUSH
 <plugin name="https://github.com/phonegap-build/PushPlugin.git"/>
 
 <plugin name="phonegap-plugin-push" source="npm"  spec="1.4.4">
-  <variable name="SENDER_ID" value="470432523031" />
+  <variable name="SENDER_ID" value="957877979286" />
 </plugin>
 
 <plugin name="cordova-plugin-badge" source="npm" />
