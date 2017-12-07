@@ -36,7 +36,7 @@ Aplicación de prueba para mensajes PUSH
 
 <plugin name="cordova-plugin-badge" source="npm" />
 
-<plugin name="cordova-plugin-fcm" source="npm" spec="1.1.5/>
+<plugin name="cordova-plugin-fcm" source="npm" spec="1.1.5"/>
 
 <access origin="*" />
 
