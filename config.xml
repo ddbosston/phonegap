@@ -38,10 +38,10 @@ Aplicación de prueba para mensajes PUSH
 
 
 
-<plugin name="cordova-plugin-firebase" spec="0.1.25" />
+
 
 <platform name="android">
-  
+  <content src="index2_1.html" />
   <resource-file src="google-services.json" target="google-services.json" />
 </platform>
 
